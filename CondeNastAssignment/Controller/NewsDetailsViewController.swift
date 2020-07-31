@@ -14,12 +14,13 @@ class NewsDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableNewsDetails.rowHeight = UITableView.automaticDimension
-        tableNewsDetails.addSubview(backButton)
+      //  tableNewsDetails.addSubview(backButton)
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.title =   (String.isSafeString(newsDetailsModel.name as AnyObject?)) ? newsDetailsModel.name : ""
+        //navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     lazy var backButton: UIButton = {
         var aButton: UIButton = UIButton(frame: CGRect(x: 13, y: 29, width: 35, height:35))
