@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UIImageView.configureCache(withMemoryCapacity: 100_00_000, andPreferredMemoryAfterPurge: 60_00_000)
         UIApplication.shared.statusBarStyle = .lightContent
         UINavigationBar.appearance().barTintColor = .orange
         UINavigationBar.appearance().tintColor = .white

@@ -36,18 +36,8 @@ class NewsDetailsHeaderCell: BaseTableViewCell {
             self.labelNewDetails.text =  (String.isSafeString(data.newsDescription as AnyObject?)) ? data.newsDescription : ""
             self.labelNewsID.text =  (String.isSafeString(data.name as AnyObject?)) ? data.name : ""
             self.labelNewsDate.text =  (String.isSafeString(data.newsData as AnyObject?)) ? Date().getFormattedDate(data.newsData!) : ""
-            DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
-                
-                if data.newsImage != nil {
-                    DispatchQueue.main.async{
-                        if let imageUrl = data.newsImage {
-                            self.imgNewsImage.setImage(withURL: URL(string: imageUrl)!, placeHolderImageNamed: "news-default", andImageTransition: .noTransition)
-                        }
-                        else {
-                            self.imgNewsImage.image = #imageLiteral(resourceName: "news-default.jpeg")
-                        }
-                    }
-                }
+            if let imageNewUrl = data.newsImage  {
+                self.imgNewsImage.sd_setImage(with: URL(string: imageNewUrl), placeholderImage: UIImage(named: "news-default"))
             }
             
         }
