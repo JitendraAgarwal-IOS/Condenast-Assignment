@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import KRProgressHUD
 protocol NewsHeadLineListDelegate {
     func updateUI()
 }
@@ -23,6 +24,7 @@ class NewHeadLineViewModel {
 extension NewHeadLineViewModel {
     
     fileprivate func getNewsHeadLinesApiCall() {
+        KRProgressHUD.show(withMessage: "Loading...")
         APIHandler.handler.getUserProfileList({ (response) in
             guard let arrObjet =  response!["articles"] as? [AnyObject] else {
                 return
@@ -30,6 +32,9 @@ extension NewHeadLineViewModel {
             
             if arrObjet.count > 0  {
                 self.arrNewsHeadLine.removeAll()
+               DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                   KRProgressHUD.dismiss()
+                }
                 for dict in arrObjet {
                    let model =  NewsHeadLines(dict: dict as! [String: AnyObject])
                     self.arrNewsHeadLine.append(model)
