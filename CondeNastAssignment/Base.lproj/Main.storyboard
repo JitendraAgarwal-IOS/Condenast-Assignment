@@ -176,13 +176,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Pg-cd-fCa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="340"/>
+                                                    <rect key="frame" x="0.0" y="10" width="414" height="280"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="340" id="AVs-f5-Cpl"/>
+                                                        <constraint firstAttribute="height" constant="280" id="AVs-f5-Cpl"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pJc-xJ-S7o">
-                                                    <rect key="frame" x="15" y="308" width="384" height="0.0"/>
+                                                    <rect key="frame" x="15" y="317" width="384" height="0.0"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-mQ-JxF">
                                                             <rect key="frame" x="0.0" y="0.0" width="384" height="0.0"/>
@@ -193,7 +193,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pzo-Jb-tGe">
-                                                    <rect key="frame" x="12" y="360" width="390" height="18.5"/>
+                                                    <rect key="frame" x="12" y="370" width="390" height="18.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cnn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-Z7-sxQ">
                                                             <rect key="frame" x="0.0" y="0.0" width="307.5" height="18.5"/>
@@ -210,24 +210,24 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d0-mH-ocJ">
-                                                    <rect key="frame" x="12" y="398.5" width="390" height="250"/>
+                                                    <rect key="frame" x="12" y="408.5" width="390" height="240"/>
                                                     <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="14"/>
                                                     <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="pzo-Jb-tGe" firstAttribute="top" secondItem="1Pg-cd-fCa" secondAttribute="bottom" constant="20" id="4p8-M4-Y40"/>
+                                                <constraint firstItem="pzo-Jb-tGe" firstAttribute="top" secondItem="1Pg-cd-fCa" secondAttribute="bottom" constant="80" id="4p8-M4-Y40"/>
                                                 <constraint firstItem="pzo-Jb-tGe" firstAttribute="centerX" secondItem="Iar-1u-ulS" secondAttribute="centerX" id="9MJ-Ia-a7M"/>
                                                 <constraint firstAttribute="trailing" secondItem="1Pg-cd-fCa" secondAttribute="trailing" id="BJZ-JH-GyF"/>
                                                 <constraint firstItem="6d0-mH-ocJ" firstAttribute="leading" secondItem="Iar-1u-ulS" secondAttribute="leading" constant="12" id="BfZ-eq-2J7"/>
                                                 <constraint firstAttribute="trailing" secondItem="pJc-xJ-S7o" secondAttribute="trailing" constant="15" id="IZV-mh-MFD"/>
                                                 <constraint firstAttribute="trailing" secondItem="pzo-Jb-tGe" secondAttribute="trailing" constant="12" id="JD3-jZ-UAd"/>
                                                 <constraint firstItem="pzo-Jb-tGe" firstAttribute="leading" secondItem="Iar-1u-ulS" secondAttribute="leading" constant="12" id="XWv-lw-x9n"/>
-                                                <constraint firstItem="pJc-xJ-S7o" firstAttribute="bottom" secondItem="1Pg-cd-fCa" secondAttribute="bottom" multiplier="0.9" constant="2" id="dTg-OY-uIl"/>
+                                                <constraint firstItem="pJc-xJ-S7o" firstAttribute="bottom" secondItem="1Pg-cd-fCa" secondAttribute="bottom" multiplier="0.9" constant="56" id="dTg-OY-uIl"/>
                                                 <constraint firstAttribute="trailing" secondItem="6d0-mH-ocJ" secondAttribute="trailing" constant="12" id="eFY-pk-8aE"/>
                                                 <constraint firstItem="pJc-xJ-S7o" firstAttribute="centerX" secondItem="Iar-1u-ulS" secondAttribute="centerX" id="hKg-Do-EqD"/>
-                                                <constraint firstItem="1Pg-cd-fCa" firstAttribute="top" secondItem="Iar-1u-ulS" secondAttribute="top" id="i3D-X4-ruP"/>
+                                                <constraint firstItem="1Pg-cd-fCa" firstAttribute="top" secondItem="Iar-1u-ulS" secondAttribute="top" constant="10" id="i3D-X4-ruP"/>
                                                 <constraint firstItem="1Pg-cd-fCa" firstAttribute="leading" secondItem="Iar-1u-ulS" secondAttribute="leading" id="jtx-qM-hOG"/>
                                                 <constraint firstItem="6d0-mH-ocJ" firstAttribute="top" secondItem="pzo-Jb-tGe" secondAttribute="bottom" constant="20" id="myE-lo-jiY"/>
                                                 <constraint firstItem="pJc-xJ-S7o" firstAttribute="leading" secondItem="Iar-1u-ulS" secondAttribute="leading" constant="15" id="wPB-Bm-0Wq"/>
