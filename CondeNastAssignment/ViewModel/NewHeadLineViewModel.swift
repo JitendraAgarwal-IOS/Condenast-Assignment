@@ -25,6 +25,7 @@ extension NewHeadLineViewModel {
     
     fileprivate func getNewsHeadLinesApiCall() {
         KRProgressHUD.show(withMessage: "Loading...")
+        
         APIHandler.handler.getUserProfileList({ (response) in
             guard let arrObjet =  response!["articles"] as? [AnyObject] else {
                 return
@@ -48,6 +49,7 @@ extension NewHeadLineViewModel {
        
         }, failure: { (error) in
             // failure case.
+           KRProgressHUD.dismiss()
         })
     }
 }

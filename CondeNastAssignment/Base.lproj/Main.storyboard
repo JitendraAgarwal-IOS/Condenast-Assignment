@@ -23,9 +23,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK9-dg-mrP">
+                                <rect key="frame" x="157" y="436" width="100" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="oab-cO-2gV"/>
+                                    <constraint firstAttribute="width" constant="100" id="xLD-Gn-CbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5rK-8L-umJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeadLineTableViewCell" rowHeight="200" id="BKv-GG-14a" customClass="HeadLineTableViewCell" customModule="CondeNastAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
@@ -131,7 +141,9 @@
                             <constraint firstItem="5rK-8L-umJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SVe-oh-Lmn"/>
                             <constraint firstAttribute="bottom" secondItem="5rK-8L-umJ" secondAttribute="bottom" id="VgN-WW-cq8"/>
                             <constraint firstItem="5rK-8L-umJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XWI-cZ-DVC"/>
+                            <constraint firstItem="uK9-dg-mrP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMm-fd-U8Y"/>
                             <constraint firstItem="5rK-8L-umJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lm8-BE-KSZ"/>
+                            <constraint firstItem="uK9-dg-mrP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u6d-YF-62W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

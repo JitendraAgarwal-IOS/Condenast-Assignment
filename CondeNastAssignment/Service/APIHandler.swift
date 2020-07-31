@@ -13,14 +13,12 @@ class APIHandler: NSObject {
     static let handler = APIHandler()
     fileprivate override init() { }
     
-    func getUserProfileList(_ success: @escaping (_ response: [String:AnyObject]?) -> (), failure: (_ error: NSError?) -> ()) {
-        Requester.handler.request { (response) in
-       
-            success((response))
-     
+    func getUserProfileList(_ success: @escaping (_ response: [String:AnyObject]?) -> (), failure: @escaping (_ error: NSError?) -> ()) {
+        Requester.handler.request({ (feedData) in
+            success(feedData)
+        }) { (error) in
+            failure(error)
+            
         }
-        failure(nil)
-        print("faild")
     }
-    
 }

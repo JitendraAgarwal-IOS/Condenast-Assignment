@@ -14,6 +14,7 @@ class NewHeadLineController: BaseViewController {
     @IBOutlet weak var tableNewsList: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableNewsList.isHidden = true
         model.delegate = self
         self.title = "HEADLINS"
         let textAttributes = [NSAttributedString.Key.font: UIFont(name: "RobotoSlab-Bold", size: 18.0)!,NSAttributedString.Key.foregroundColor:UIColor.white]
@@ -21,13 +22,16 @@ class NewHeadLineController: BaseViewController {
 
         
     }
-
 }
 // NewsHeadLineListDelegate Delegate
 extension NewHeadLineController: NewsHeadLineListDelegate {
     func updateUI() {
         DispatchQueue.main.async {
-            self.tableNewsList.reloadData()
+            if self.model.numberOfRowInSection > 0{
+                self.tableNewsList.isHidden = false
+                self.tableNewsList.reloadData()
+            }
+            
         }
     }
 }

@@ -12,7 +12,9 @@ class BaseViewController: UIViewController {
  var datasource : AnyObject?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.view.backgroundColor =  UIColor(hexFromString: "#25282A")
+        
         // Do any additional setup after loading the view.
     }
    
