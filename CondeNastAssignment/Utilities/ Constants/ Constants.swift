@@ -1,10 +1,10 @@
 //
 //   Constants.swift
-//  ByjuAssignment
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 02/08/19.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
 //  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
-//
+///
 
 import Foundation
 

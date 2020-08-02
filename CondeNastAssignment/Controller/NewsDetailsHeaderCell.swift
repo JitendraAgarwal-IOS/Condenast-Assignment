@@ -1,8 +1,8 @@
 //
 //  NewsDetailsHeaderCell.swift
-//  ByjuAssignment
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 02/08/19.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
 //  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
@@ -31,15 +31,18 @@ class NewsDetailsHeaderCell: BaseTableViewCell {
             guard datasource != nil else {
                 return
             }
-            let data =  datasource as! NewsHeadLines
-            self.labelHeader.text =  (String.isSafeString(data.newsTitle as AnyObject?)) ? data.newsTitle : ""
-            self.labelNewDetails.text =  (String.isSafeString(data.newsDescription as AnyObject?)) ? data.newsDescription : ""
-            self.labelNewsID.text =  (String.isSafeString(data.name as AnyObject?)) ? data.name : ""
-            self.labelNewsDate.text =  (String.isSafeString(data.newsData as AnyObject?)) ? Date().getFormattedDate(data.newsData!) : ""
-            if let imageNewUrl = data.newsImage  {
-                self.imgNewsImage.sd_setImage(with: URL(string: imageNewUrl), placeholderImage: UIImage(named: "news-default"))
-            }
+            let data =  datasource as! Articles
+                    self.labelHeader.text =  (String.isSafeString(data.title as AnyObject?)) ? data.title : ""
+                    self.labelNewsID.text =  (String.isSafeString(data.source?.name as AnyObject?)) ? data.source?.name: ""
+                    self.labelNewDetails.text =  (String.isSafeString(data.description as AnyObject?)) ? data.description: ""
+                      self.labelNewsDate.text =  (String.isSafeString(data.publishedAt as AnyObject?)) ? Date().getFormattedDate(data.publishedAt!) : ""
+                      if let imageNewUrl = data.urlToImage  {
+                          self.imgNewsImage.sd_setImage(with: URL(string: imageNewUrl), placeholderImage: UIImage(named: "news-default"))
+                      }
+                  
+                   }
+
             
         }
     }
-}
+

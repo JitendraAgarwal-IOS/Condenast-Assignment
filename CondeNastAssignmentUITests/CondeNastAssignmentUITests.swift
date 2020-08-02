@@ -1,9 +1,9 @@
 //
 //  CondeNastAssignmentUITests.swift
-//  CondeNastAssignmentUITests
+//  CondeNastAssignment
 //
-//  Created by JItu on 31/07/20.
-//  Copyright © 2020 JItu. All rights reserved.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
+//  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
 import XCTest

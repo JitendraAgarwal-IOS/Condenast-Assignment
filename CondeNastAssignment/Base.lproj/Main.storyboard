@@ -149,6 +149,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Km3-sx-a0a"/>
                     <connections>
+                        <outlet property="noDataLabel" destination="uK9-dg-mrP" id="DWA-JQ-AZD"/>
                         <outlet property="tableNewsList" destination="5rK-8L-umJ" id="iY6-F8-kIm"/>
                     </connections>
                 </viewController>

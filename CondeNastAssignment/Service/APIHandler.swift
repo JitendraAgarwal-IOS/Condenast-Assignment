@@ -1,8 +1,8 @@
 //
 //  APIHandler.swift
-//  NavaAssignment
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 21/02/19.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
 //  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ class APIHandler: NSObject {
     static let handler = APIHandler()
     fileprivate override init() { }
     
-    func getUserProfileList(_ success: @escaping (_ response: [String:AnyObject]?) -> (), failure: @escaping (_ error: NSError?) -> ()) {
+    func getNewArticles(_ success: @escaping (_ response: NewsArticles?) -> (), failure: @escaping (_ error: NSError?) -> ()) {
         Requester.handler.request({ (feedData) in
             success(feedData)
         }) { (error) in

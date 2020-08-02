@@ -1,9 +1,8 @@
 //
-//  Color+Knowage.swift
-//  KnowageSet
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 23/11/18.
-//  Copyright © 2018 Jitendra Kumar Agarwal. All rights reserved.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
+//  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
 import Foundation

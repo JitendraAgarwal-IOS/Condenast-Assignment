@@ -1,8 +1,8 @@
 //
 //  HeadLineTableViewCell.swift
-//  Byju'sAssignment
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 25/07/19.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
 //  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
@@ -34,12 +34,15 @@ class HeadLineTableViewCell: BaseTableViewCell {
             guard datasource != nil else {
                 return
             }
-             let data =  datasource as! NewsHeadLines
-            self.labelNewTitle.text =  (String.isSafeString(data.newsTitle as AnyObject?)) ? data.newsTitle : ""
-            self.labelNewsID.text =  (String.isSafeString(data.name as AnyObject?)) ? data.name : ""
-            self.labelNewsDate.text =  (String.isSafeString(data.newsData as AnyObject?)) ? Date().getFormattedDate(data.newsData!) : ""
-            if let imageNewUrl = data.newsImage  {
+             let data =  datasource as! Articles
+            self.labelNewTitle.text =  (String.isSafeString(data.title as AnyObject?)) ? data.title : ""
+            self.labelNewsID.text =  (String.isSafeString(data.source?.name as AnyObject?)) ? data.source?.name: ""
+            self.labelNewsDate.text =  (String.isSafeString(data.publishedAt as AnyObject?)) ? Date().getFormattedDate(data.publishedAt!) : ""
+            if let imageNewUrl = data.urlToImage  {
                 self.imgNewsImage.sd_setImage(with: URL(string: imageNewUrl), placeholderImage: UIImage(named: "news-default"))
+            }
+            else{
+                self.imgNewsImage.image = UIImage(named: "news-default")
             }
         
          }

@@ -17,7 +17,6 @@
 		4E15335724D4221F00DBB77C /* CondeNastAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15335624D4221F00DBB77C /* CondeNastAssignmentTests.swift */; };
 		4E15336224D4221F00DBB77C /* CondeNastAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15336124D4221F00DBB77C /* CondeNastAssignmentUITests.swift */; };
 		4E15338C24D422F600DBB77C /*  Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15337124D422F600DBB77C /*  Constants.swift */; };
-		4E15338D24D422F600DBB77C /* UIImageView+JA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15337324D422F600DBB77C /* UIImageView+JA.swift */; };
 		4E15338E24D422F600DBB77C /* Date+JA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15337424D422F600DBB77C /* Date+JA.swift */; };
 		4E15338F24D422F600DBB77C /* Color+JA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15337524D422F600DBB77C /* Color+JA.swift */; };
 		4E15339024D422F600DBB77C /* String+JA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15337624D422F600DBB77C /* String+JA.swift */; };
@@ -32,7 +31,7 @@
 		4E15339924D422F600DBB77C /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E15338224D422F600DBB77C /* RobotoSlab-Light.ttf */; };
 		4E15339A24D422F600DBB77C /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E15338324D422F600DBB77C /* RobotoSlab-Regular.ttf */; };
 		4E15339B24D422F600DBB77C /* NewsHeadLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15338524D422F600DBB77C /* NewsHeadLines.swift */; };
-		4E15339C24D422F600DBB77C /* NewHeadLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15338724D422F600DBB77C /* NewHeadLineViewModel.swift */; };
+		4E15339C24D422F600DBB77C /* NewsArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15338724D422F600DBB77C /* NewsArticlesModel.swift */; };
 		4E15339D24D422F600DBB77C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15338924D422F600DBB77C /* BaseViewController.swift */; };
 		4E15339E24D422F600DBB77C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15338B24D422F600DBB77C /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,6 @@
 		4E15336124D4221F00DBB77C /* CondeNastAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondeNastAssignmentUITests.swift; sourceTree = "<group>"; };
 		4E15336324D4221F00DBB77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E15337124D422F600DBB77C /*  Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " Constants.swift"; sourceTree = "<group>"; };
-		4E15337324D422F600DBB77C /* UIImageView+JA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+JA.swift"; sourceTree = "<group>"; };
 		4E15337424D422F600DBB77C /* Date+JA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+JA.swift"; sourceTree = "<group>"; };
 		4E15337524D422F600DBB77C /* Color+JA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+JA.swift"; sourceTree = "<group>"; };
 		4E15337624D422F600DBB77C /* String+JA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+JA.swift"; sourceTree = "<group>"; };
@@ -87,7 +85,7 @@
 		4E15338224D422F600DBB77C /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
 		4E15338324D422F600DBB77C /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
 		4E15338524D422F600DBB77C /* NewsHeadLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsHeadLines.swift; sourceTree = "<group>"; };
-		4E15338724D422F600DBB77C /* NewHeadLineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHeadLineViewModel.swift; sourceTree = "<group>"; };
+		4E15338724D422F600DBB77C /* NewsArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsArticlesModel.swift; sourceTree = "<group>"; };
 		4E15338924D422F600DBB77C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4E15338B24D422F600DBB77C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		C0941A3617D8353906999A0B /* Pods-CondeNastAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondeNastAssignment.debug.xcconfig"; path = "Target Support Files/Pods-CondeNastAssignment/Pods-CondeNastAssignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 		4E15337224D422F600DBB77C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4E15337324D422F600DBB77C /* UIImageView+JA.swift */,
 				4E15337424D422F600DBB77C /* Date+JA.swift */,
 				4E15337524D422F600DBB77C /* Color+JA.swift */,
 				4E15337624D422F600DBB77C /* String+JA.swift */,
@@ -250,7 +247,7 @@
 		4E15338624D422F600DBB77C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4E15338724D422F600DBB77C /* NewHeadLineViewModel.swift */,
+				4E15338724D422F600DBB77C /* NewsArticlesModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -474,10 +471,9 @@
 				4E15334424D4221B00DBB77C /* ViewController.swift in Sources */,
 				4E15339E24D422F600DBB77C /* BaseTableViewCell.swift in Sources */,
 				4E15338F24D422F600DBB77C /* Color+JA.swift in Sources */,
-				4E15339C24D422F600DBB77C /* NewHeadLineViewModel.swift in Sources */,
+				4E15339C24D422F600DBB77C /* NewsArticlesModel.swift in Sources */,
 				4E15334024D4221B00DBB77C /* AppDelegate.swift in Sources */,
 				4E15339D24D422F600DBB77C /* BaseViewController.swift in Sources */,
-				4E15338D24D422F600DBB77C /* UIImageView+JA.swift in Sources */,
 				4E15339624D422F600DBB77C /* APIHandler.swift in Sources */,
 				4E15339224D422F600DBB77C /* NewHeadLineController.swift in Sources */,
 				4E15339324D422F600DBB77C /* NewsDetailsViewController.swift in Sources */,

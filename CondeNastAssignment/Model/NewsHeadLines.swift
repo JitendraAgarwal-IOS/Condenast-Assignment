@@ -1,28 +1,33 @@
 //
 //  NewsHeadLines.swift
-//  Byju'sAssignment
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 25/07/19.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
 //  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
 import Foundation
 import UIKit
-struct NewsHeadLines {
-    
-    var newsID: String?
-    var name: String?
-    var newsTitle: String?
-    var newsDescription: String?
-    var newsImage:String?
-    var newsData: String?
-    
-    init(dict:[String:AnyObject]) {
-        newsID      =   dict["source"]!["id"] as? String
-        name        =   dict["source"]!["name"] as? String
-        newsTitle   =   dict["title"] as? String
-        newsDescription =   dict["description"] as? String
-        newsImage   =   dict["urlToImage"] as? String
-        newsData    =   dict["publishedAt"] as? String
-    }
+
+struct NewsArticles:Decodable {
+    var status: String?
+    var totalResults: Int?
+    var articles : [Articles]
 }
+
+struct Articles: Decodable {
+    var source : Source?
+    var author: String?
+    var title: String?
+    var description: String?
+    var url: String?
+    var urlToImage: String?
+    var publishedAt: String?
+    var content:String?
+   
+}
+struct Source: Decodable {
+    var id: String?
+    var name: String?
+}
+

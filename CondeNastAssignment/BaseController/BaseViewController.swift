@@ -1,8 +1,8 @@
 //
 //  BaseViewController.swift
-//  Byju'sAssignment
+//  CondeNastAssignment
 //
-//  Created by Jitendra Kumar Agarwal on 26/07/19.
+//  Created by Jitendra Kumar Agarwal on 3/08/19.
 //  Copyright © 2019 Jitendra Kumar Agarwal. All rights reserved.
 //
 
