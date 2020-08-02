@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+protocol didTapNewsArticlesDelagte {
+    func openNewspage()
+}
 class NewsDetailsHeaderCell: BaseTableViewCell {
     
     @IBOutlet weak var labelHeader: UILabel!
-    @IBOutlet weak var imgNewsImage: UIImageView!
     @IBOutlet weak var labelNewsDate: UILabel!
     @IBOutlet weak var labelNewsID: UILabel!
     @IBOutlet weak var labelNewDetails: UILabel!
@@ -32,17 +33,13 @@ class NewsDetailsHeaderCell: BaseTableViewCell {
                 return
             }
             let data =  datasource as! Articles
-                    self.labelHeader.text =  (String.isSafeString(data.title as AnyObject?)) ? data.title : ""
-                    self.labelNewsID.text =  (String.isSafeString(data.source?.name as AnyObject?)) ? data.source?.name: ""
-                    self.labelNewDetails.text =  (String.isSafeString(data.description as AnyObject?)) ? data.description: ""
-                      self.labelNewsDate.text =  (String.isSafeString(data.publishedAt as AnyObject?)) ? Date().getFormattedDate(data.publishedAt!) : ""
-                      if let imageNewUrl = data.urlToImage  {
-                          self.imgNewsImage.sd_setImage(with: URL(string: imageNewUrl), placeholderImage: UIImage(named: "news-default"))
-                      }
-                  
-                   }
-
-            
+                self.labelHeader.text =  (String.isSafeString(data.title as AnyObject?)) ? data.title : ""
+                self.labelNewsID.text =  (String.isSafeString(data.source?.name as AnyObject?)) ? data.source?.name: ""
+                self.labelNewDetails.text =  (String.isSafeString(data.description as AnyObject?)) ? data.description: ""
+                self.labelNewsDate.text =  (String.isSafeString(data.publishedAt as AnyObject?)) ? Date().getFormattedDate(data.publishedAt!) : ""
         }
     }
+   
+}
+
 

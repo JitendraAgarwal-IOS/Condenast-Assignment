@@ -10,11 +10,18 @@ import UIKit
 
 class NewsDetailsViewController: UIViewController {
     var artical: Articles!
+     @IBOutlet weak var imgNewsImage: UIImageView!
     @IBOutlet weak var tableNewsDetails: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+     
+        if let imageNewUrl = artical.urlToImage  {
+            addImageTapGesture()
+           self.imgNewsImage.sd_setImage(with: URL(string: imageNewUrl), placeholderImage: UIImage(named: "news-default"))
+       }else{
+        self.imgNewsImage.image = UIImage(named: "news-default")
+        }
         self.tableNewsDetails.rowHeight = UITableView.automaticDimension
       
     }
@@ -22,9 +29,20 @@ class NewsDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         self.title =   (String.isSafeString(artical.source?.name as AnyObject?)) ? artical.source?.name : ""
     }
-  
-    
-    
+    private func addImageTapGesture() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        imgNewsImage.isUserInteractionEnabled = true
+        imgNewsImage.addGestureRecognizer(tapGestureRecognizer)
+    }
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let webView =  mainStoryboard.instantiateViewController(withIdentifier: "NewWebViewViewController") as! NewWebViewViewController
+        if let imageNewUrl = artical.url  {
+            webView.imageURL = imageNewUrl
+            self.navigationController?.pushViewController(webView, animated: true)
+           
+        }
+    }
 }
 // MARK:- User Define
 extension NewsDetailsViewController {
@@ -49,4 +67,4 @@ extension NewsDetailsViewController: UITableViewDelegate, UITableViewDataSource 
         return   UITableView.automaticDimension
     }
     
-    }
+}
