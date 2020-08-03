@@ -2,5 +2,5 @@
 Assignment For Condenast
 
 # Main Screen
-This is main screen
-![1](https://user-images.githubusercontent.com/38103922/89153256-29aeae80-d582-11ea-814a-c2b911eb7860.png)
+![1](https://user-images.githubusercontent.com/38103922/89153712-10f2c880-d583-11ea-9a01-e34e0b1c1e1b.png){:height="24px" width="48px"}
+
