@@ -6,4 +6,4 @@ Assignment For Condenast
 <br>
 # Details Screen
 
-![2](https://user-images.githubusercontent.com/38103922/89154229-1ac8fb80-d584-11ea-8123-a1c7403b55cf.png)
+![2](https://user-images.githubusercontent.com/38103922/89154368-6085c400-d584-11ea-86c3-4afaad2c8d40.png)
